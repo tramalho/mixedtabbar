@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FavoriteViewController.h
 //  MixedTabbar
 //
 //  Created by Thiago Antonio Ramalho on 27/05/18.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FavoriteViewController : UIViewController
 
 @end
-

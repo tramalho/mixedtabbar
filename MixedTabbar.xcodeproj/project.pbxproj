@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		375F13D320BB52B20058A260 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F13D220BB52B20058A260 /* AppDelegate.m */; };
-		375F13D620BB52B20058A260 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F13D520BB52B20058A260 /* ViewController.m */; };
 		375F13D920BB52B20058A260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375F13D720BB52B20058A260 /* Main.storyboard */; };
 		375F13DB20BB52B20058A260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375F13DA20BB52B20058A260 /* Assets.xcassets */; };
 		375F13DE20BB52B20058A260 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375F13DC20BB52B20058A260 /* LaunchScreen.storyboard */; };
 		375F13E120BB52B20058A260 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F13E020BB52B20058A260 /* main.m */; };
 		375F13EB20BB52B20058A260 /* MixedTabbarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F13EA20BB52B20058A260 /* MixedTabbarUITests.m */; };
+		375F140520BB5D4C0058A260 /* FavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F140420BB5D4C0058A260 /* FavoriteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,8 +30,6 @@
 		375F13CE20BB52B20058A260 /* MixedTabbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixedTabbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		375F13D120BB52B20058A260 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		375F13D220BB52B20058A260 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		375F13D420BB52B20058A260 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		375F13D520BB52B20058A260 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		375F13D820BB52B20058A260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		375F13DA20BB52B20058A260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		375F13DD20BB52B20058A260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +38,8 @@
 		375F13E620BB52B20058A260 /* MixedTabbarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixedTabbarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		375F13EA20BB52B20058A260 /* MixedTabbarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixedTabbarUITests.m; sourceTree = "<group>"; };
 		375F13EC20BB52B20058A260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375F140320BB5D4C0058A260 /* FavoriteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavoriteViewController.h; sourceTree = "<group>"; };
+		375F140420BB5D4C0058A260 /* FavoriteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavoriteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +100,8 @@
 		375F13F520BB52F70058A260 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				375F13E020BB52B20058A260 /* main.m */,
-				375F13D120BB52B20058A260 /* AppDelegate.h */,
-				375F13D220BB52B20058A260 /* AppDelegate.m */,
-				375F13D420BB52B20058A260 /* ViewController.h */,
-				375F13D520BB52B20058A260 /* ViewController.m */,
+				375F140720BB5D720058A260 /* Controller */,
+				375F140220BB5CE60058A260 /* Infraestructure */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -141,6 +138,26 @@
 				375F13DF20BB52B20058A260 /* Info.plist */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		375F140220BB5CE60058A260 /* Infraestructure */ = {
+			isa = PBXGroup;
+			children = (
+				375F13E020BB52B20058A260 /* main.m */,
+				375F13D120BB52B20058A260 /* AppDelegate.h */,
+				375F13D220BB52B20058A260 /* AppDelegate.m */,
+			);
+			path = Infraestructure;
+			sourceTree = "<group>";
+		};
+		375F140720BB5D720058A260 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				375F140320BB5D4C0058A260 /* FavoriteViewController.h */,
+				375F140420BB5D4C0058A260 /* FavoriteViewController.m */,
+			);
+			name = Controller;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				375F13D620BB52B20058A260 /* ViewController.m in Sources */,
+				375F140520BB5D4C0058A260 /* FavoriteViewController.m in Sources */,
 				375F13E120BB52B20058A260 /* main.m in Sources */,
 				375F13D320BB52B20058A260 /* AppDelegate.m in Sources */,
 			);
