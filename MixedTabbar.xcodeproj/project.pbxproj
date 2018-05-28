@@ -146,6 +146,7 @@
 		375F140220BB5CE60058A260 /* Infraestructure */ = {
 			isa = PBXGroup;
 			children = (
+				375F140E20BB64980058A260 /* MixedTabbar-Bridging-Header.h */,
 				375F13E020BB52B20058A260 /* main.m */,
 				375F13D120BB52B20058A260 /* AppDelegate.h */,
 				375F13D220BB52B20058A260 /* AppDelegate.m */,
@@ -159,7 +160,6 @@
 				375F140320BB5D4C0058A260 /* FavoriteViewController.h */,
 				375F140420BB5D4C0058A260 /* FavoriteViewController.m */,
 				375F140F20BB64980058A260 /* CustomTabBarViewController.swift */,
-				375F140E20BB64980058A260 /* MixedTabbar-Bridging-Header.h */,
 			);
 			name = Controller;
 			path = "New Group";
@@ -428,9 +428,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.tramalho.MixedTabbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MixedTabbar/Source/New Group/MixedTabbar-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixedTabbar/Source/Infraestructure/MixedTabbar-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -446,8 +446,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.tramalho.MixedTabbar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "MixedTabbar/Source/New Group/MixedTabbar-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "MixedTabbar/Source/Infraestructure/MixedTabbar-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

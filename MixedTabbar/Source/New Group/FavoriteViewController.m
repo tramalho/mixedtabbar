@@ -7,21 +7,29 @@
 //
 
 #import "FavoriteViewController.h"
+#import "MixedTabbar-Swift.h"
+
+#define RAND_FROM_TO(min, max) (min + arc4random_uniform(max - min + 1))
 
 @interface FavoriteViewController ()
-
+@property (nonatomic, strong) CustomTabBarViewController *customTabVC;
 @end
 
 @implementation FavoriteViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    _customTabVC = (CustomTabBarViewController *) self.tabBarController;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)changeBadge:(id)sender {
+    NSInteger value = RAND_FROM_TO(0, 99);
+    [_customTabVC updateBadgeValueWithPosition:1 newValue:value];
 }
 
 /*

@@ -17,14 +17,14 @@
                     <view key="view" contentMode="scaleToFill" id="BSg-aU-cYD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="NbS-fu-BsY"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="contacts" id="Mqo-FZ-zCF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UtR-4F-Xjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-250" y="-22"/>
+            <point key="canvasLocation" x="-250.40000000000001" y="-22.03898050974513"/>
         </scene>
         <!--FavoritesViewController-->
         <scene sceneID="maK-AN-kpy">
@@ -33,27 +33,39 @@
                     <view key="view" contentMode="scaleToFill" id="SRz-hq-v0o">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1r-Q3-1LY">
+                                <rect key="frame" x="132" y="294" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" title="Change Badge">
+                                    <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeBadge:" destination="zBY-d0-P8Y" eventType="touchUpInside" id="NXW-cW-GaX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="otS-nm-nZg"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="IrY-OX-QvJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0T-6c-24P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-250" y="-686"/>
+            <point key="canvasLocation" x="-250.40000000000001" y="-686.80659670164926"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar View Controller-->
         <scene sceneID="RPD-Kd-vep">
             <objects>
-                <tabBarController id="8LP-Xf-fUa" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="CustomTabBarViewController" id="8LP-Xf-fUa" customClass="CustomTabBarViewController" customModule="MixedTabbar" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="AbS-Er-sg2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="zBY-d0-P8Y" kind="relationship" relationship="viewControllers" id="Il1-rX-3mz"/>
                         <segue destination="e5e-i1-41A" kind="relationship" relationship="viewControllers" id="nxz-zQ-92N"/>
+                        <segue destination="zBY-d0-P8Y" kind="relationship" relationship="viewControllers" id="Il1-rX-3mz"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B8P-7K-UeY" userLabel="First Responder" sceneMemberID="firstResponder"/>
