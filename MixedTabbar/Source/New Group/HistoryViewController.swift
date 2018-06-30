@@ -10,6 +10,7 @@ import UIKit
 
 class HistoryViewController: UIViewController {
 
+    @IBOutlet weak var text: UILabel!
     @IBOutlet weak var overlay: UIView!
     
     override func viewDidLoad() {
@@ -17,14 +18,31 @@ class HistoryViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        configNavigationWithOverlay()
+        
+        configLabel()
+    }
+    
+    fileprivate func configNavigationWithOverlay() {
         overlay.makeCircular()
         
         let navBar = self.navigationController?.navigationBar
-            
+        
         navBar?.addSubview(overlay)
         
         navBar?.bringSubview(toFront: overlay)
     }
+    
+    
+    fileprivate func configLabel() {
+        
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "Your Text")
+        attributeString.addAttribute(NSAttributedStringKey.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+        
+        text.attributedText = attributeString
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
