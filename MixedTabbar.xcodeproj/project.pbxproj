@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		375AC9C820E7C9E90027D1AB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375AC9C720E7C9E90027D1AB /* Extensions.swift */; };
+		375AC9CF20E7DF9D0027D1AB /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375AC9CE20E7DF9D0027D1AB /* HistoryViewController.swift */; };
 		375F13D320BB52B20058A260 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 375F13D220BB52B20058A260 /* AppDelegate.m */; };
 		375F13D920BB52B20058A260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 375F13D720BB52B20058A260 /* Main.storyboard */; };
 		375F13DB20BB52B20058A260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375F13DA20BB52B20058A260 /* Assets.xcassets */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		375AC9C720E7C9E90027D1AB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		375AC9CE20E7DF9D0027D1AB /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		375F13CE20BB52B20058A260 /* MixedTabbar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixedTabbar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		375F13D120BB52B20058A260 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		375F13D220BB52B20058A260 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 			children = (
 				375F140720BB5D720058A260 /* Controller */,
 				375F140220BB5CE60058A260 /* Infraestructure */,
+				375AC9C720E7C9E90027D1AB /* Extensions.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 				375F140320BB5D4C0058A260 /* FavoriteViewController.h */,
 				375F140420BB5D4C0058A260 /* FavoriteViewController.m */,
 				375F140F20BB64980058A260 /* CustomTabBarViewController.swift */,
+				375AC9CE20E7DF9D0027D1AB /* HistoryViewController.swift */,
 			);
 			name = Controller;
 			path = "New Group";
@@ -268,8 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375AC9C820E7C9E90027D1AB /* Extensions.swift in Sources */,
 				375F140520BB5D4C0058A260 /* FavoriteViewController.m in Sources */,
 				375F13E120BB52B20058A260 /* main.m in Sources */,
+				375AC9CF20E7DF9D0027D1AB /* HistoryViewController.swift in Sources */,
 				375F141020BB64980058A260 /* CustomTabBarViewController.swift in Sources */,
 				375F13D320BB52B20058A260 /* AppDelegate.m in Sources */,
 			);
